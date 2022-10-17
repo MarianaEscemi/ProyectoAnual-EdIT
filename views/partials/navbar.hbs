@@ -1,0 +1,55 @@
+<div class="container fixed-top {{!-- sticky-top --}} ">
+    <nav class=" navbar {{!-- sticky-top --}} navbar-expand-lg navbar-dark bg-dark rounded  text-warning">
+        <div class="container-fluid ms-3 text-warning">
+            <a class="navbar-brand text-warning" href="/"><span {{!-- class="letra" --}}>DECOART</span> Revestimientos Decorativos</a>
+            <button class="navbar-toggler text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-warning"></span>
+            </button>
+            
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" aria-current="page" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="/nosotros">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="/especialidad">Especialidad</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" href="" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="true">
+                            Revestimientos
+                        </a>
+                        <ul class="dropdown-menu bg-warning">
+                            <li><a class="dropdown-item" href="/disenos">Diseños</a></li>
+                            <li><a class="dropdown-item" href="/ideas">Ideas</a></li>
+                            <li><a class="dropdown-item" href="/productos">Productos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="/contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+</div>
+
+
+<script>
+    window.sr = ScrollReveal();
+
+    sr.reveal('.navbar', {
+        duration: 2000,
+        origin: 'bottom'
+    });
+</script>

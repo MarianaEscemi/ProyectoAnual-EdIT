@@ -1,0 +1,169 @@
+<section class="sobrenos">
+    <div class="container-fluid p-0">
+        <div class="card">
+            <img src="img/portadacarrousel1.png" class="card-img img-fluid" style="height: 300px;" alt="...">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <h1 class=" letra card-title mt-5 bg-dark text-warning rounded p-5">Sobre nosotros</h1>
+            </div>
+        </div>
+
+
+    <div class="container-fuid text-center mt-5 pb-4">
+        {{!-- <h1 class="pb-3"> Sobre nosotros</h1> --}}
+        <p class="h2 mb-2 ms-3 me-3">
+            La compañía <span class="fs-1">DecoArt</span> nace de la idea y experiencia de la socia fundadora Mariana Escemi, la cual después de
+            trabajar en el rubro de decoración, plantea la idea de conformar una empresa que fusione la decoración
+            con los revestimientos, bajo la necesidad de abrir un nuevo campo laboral enfocado al diseño exclusivo de
+            revestimientos, tanto para interiores así como también para exteriores.
+            <br> La aplicación de los revestimientos poseen múltiples técnicas. A lo largo del tiempo y la práctica
+            hemos logrado ser con DecoArt uno de los pioneros en la aplicación de revestimientos de alta decoración. En
+            cada nuevo proyecto surge el desafío y satisfacción de cumplir con todas las necesidades e ideas de nuestros
+            Clientes.
+        </p>
+    </div>
+</section>
+
+
+<section id="tecnica">
+    <div class="container bg-light">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="tecnica-content-left">
+                    <img src="/img/portadacarrousel2.png" class="img-fluid rounded" style="width: 100%">
+                </div>
+            </div>
+            <div class="col-md-6 my-auto mb-2">
+                <div class="tecnica-content-right text-center">
+                    <h1>Técnicas</h1>
+                    <p class="fs-5">Cada revestimiento posee una técnica de aplicación, en ella se cumplen ciertas reglas de ejecución haciendo de cada efecto un sistema único. <br> El aplicador de revestimientos de alta decoración se transforma así en un artista, donde cada obra realizada es única e irrepetible. <br> Éstas técnicas se logran a través de la práctica del aplicador y su dedicación, siendo así cada pared intervenida con un estilo particular y propio que se ve reflejado en el trabajo final. </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="efecto-content-right text-center">
+                    <h1 class="mt-0">Efectos</h1>
+                    <p class="mt-2 fs-5">
+                        El Revestimiento de Alta decoración es una pintura decorativa de diseño que permite lograr múltiples efectos decorativos gracias a su composición y a las técnicas
+                        de aplicación sumamente artesanales, creando un acabado distintivo donde resalta la
+                        elegancia y
+                        frescura del ambiente. Los efectos son variados y logran
+                        resaltar el espacio que se interviene, los mismos pueden ser aplicados en diferentes espacios. Incluso determinados revestimientos pueden utilizarse en exteriores.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="efecto-content-left">
+                    <img src="/img/microcementorelieve.png" class="img-fluid rounded" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<section>
+    <div class="container bg-light mt-5">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="efectoimg-content-left">
+                    <img src="/img/efectoseda.jpg" alt="efectoseda" class="img-fluid rounded" style="width: 100%;">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="efectoimg-content-right">
+                    <img src="/img/efectogrotto.jpg" alt="efectogrotto" class="img-fluid rounded" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-center">
+            <p class="h2 mt-4 mb-4 ms-3 me-3">
+                Los efectos son muchos y se
+            adaptan a todos los ambientes. <br>
+            Mirá más de nuestros revestimientos y diseños.
+            </p><a href="/disenos" class="inicio-btn btn btn-outline-dark header-btn btn-lg mb-5 text-warning">Ver más</a>
+        </div>
+</section>
+
+<section>
+    
+</section>
+
+
+
+
+<!-- SCROOLL REVEAL SCRIPT -->
+<script>
+    window.sr = ScrollReveal();
+
+
+
+    sr.reveal('.sobrenos', {
+        duration: 2000,
+        origin: 'top',
+        distance: '300px'
+    });
+
+    sr.reveal('.tecnica-content-left', {
+        duration: 2000,
+        origin: 'left',
+        distance: '300px'
+    });
+
+    sr.reveal('.btn', {
+        duration: 2000,
+        delay: 1000,
+        origin: 'bottom'
+    });
+
+    sr.reveal('.tecnica-content-right', {
+        duration: 2000,
+        origin: 'right',
+        distance: '300px',
+    });
+
+    sr.reveal('.efecto-content-left', {
+        duration: 2000,
+        origin: 'left',
+        distance: '300px'
+    });
+
+    sr.reveal('.efecto-content-right', {
+        duration: 2000,
+        origin: 'right',
+        distance: '300px'
+    });
+
+    
+    sr.reveal('.efectoimg-content-left', {
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px'
+    });
+
+    sr.reveal('.efectoimg-content-right', {
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px'
+    });
+
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
