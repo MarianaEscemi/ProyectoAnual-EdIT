@@ -1,6 +1,5 @@
 node_modules/
 marian/
-db/
-controllers/
-router/
+
+
 .env
