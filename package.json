@@ -1,18 +1,24 @@
 {
   "name": "proyectoanual",
   "version": "1.0.0",
+ 
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.1",
+    "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "hbs": "^4.2.0",
+    "mongodb": "^4.10.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.8.0",
     "path": "^0.12.7"
   }
 }

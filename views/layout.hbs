@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DECOART</title>
+    
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/estilo.css">
+{{!--  <link rel="stylesheet" href="/css/estilos-tienda.css">  --}}
 {{!-- FUENTE --}}
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
 {{!-- ICONOS --}}
@@ -16,21 +17,26 @@
 
 <!-- SCROOLL REVEAL JS -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
+    
+    
+    <title>DECOART</title>
 </head>
 <body>
-
-    {{> header}}
-    {{>navbar}}
+    {{!-- partials --}}
+    {{!-- {{> header}} 
+    {{>navbar}} --}} 
 
     {{{ body }}} {{!-- aca iriran las otras paginas que ruteamos --}}
 
-    {{> footer}} {{!-- partials --}}
+    {{!-- partials --}}
+    {{> footer}} 
 
 
 
 
-<script src="/js/bootstrap.bundle.min.js"></script>
 
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/index.js"></script>
+   {{!--  <script src="/js/main.js"></script> --}}
 </body>
 </html>

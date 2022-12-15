@@ -1,2 +1,6 @@
 node_modules/
-sirve.txt/
+marian/
+db/
+controllers/
+router/
+.env
