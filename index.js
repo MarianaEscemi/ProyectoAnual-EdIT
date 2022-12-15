@@ -8,7 +8,7 @@ const hbs = require('hbs');
 
 
 //Ejecutamos express y guardamos el puerto
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 // Middlewares Funciones para ayudar a apuntar a diferentes directorios:: entender json
