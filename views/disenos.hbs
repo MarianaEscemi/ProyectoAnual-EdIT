@@ -1,5 +1,4 @@
-
-{{> header}} 
+{{> header}}
 {{>navbar}}
 
 <div class="diseños container-fluid p-0">
@@ -10,9 +9,9 @@
         </div>
     </div>
 
-    <div class="cotainer-fuid contitulo bg-light text-center py-4">
+    <div class="cotainer-fuid contitulo bg-light text-center py-3">
         {{!-- <h1 class="">Contacto</h1> --}}
-        <p class="h2 mb-2 ms-3 me-3 pb-5">
+        <p class="h2 mb-2 ms-3 me-3 pb-3">
             En DecoArt te mostramos los Revestimientos que disponemos para renovar tu espacio con los mejores diseños y
             efectos. <br>
             La aplicación de los mismos están a cargo de un maestro aplicador de DecoArt. También podes comprar todos
@@ -21,406 +20,457 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-4">
-        <div class="list-group ms-5 text-center mt-5" id="list-tab" role="tablist">
-            <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action active" id="stuccoveneciano-list"
-                data-bs-toggle="list" href="#stuccoveneciano" role="tab" aria-controls="stuccoveneciano">Stucco
-                Veneciano</a>
-            <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action" id="microcemento-list"
-                data-bs-toggle="list" href="#microcemento" role="tab" aria-controls="microcemento">Microcemento</a>
-            <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action" id="efectopiedra-list"
-                data-bs-toggle="list" href="#efectopiedra" role="tab" aria-controls="efectopiedra">Efecto Piedra</a>
-            <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action" id="efectohormigon-list"
-                data-bs-toggle="list" href="#efectohormigon" role="tab" aria-controls="efectohormigon">Efecto
-                Hormigón</a>
-            <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action" id="efectometalizado-list"
-                data-bs-toggle="list" href="#efectometalizado" role="tab" aria-controls="efectometalizado">Efecto
-                Metalizado</a>
+<section>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group ms-5 text-center mt-5" id="list-tab" role="tablist">
+                <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action active"
+                    id="stuccoveneciano-list" data-bs-toggle="list" href="#stuccoveneciano" role="tab"
+                    aria-controls="stuccoveneciano">Stucco
+                    Veneciano</a>
+                <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action"
+                    id="microcemento-list" data-bs-toggle="list" href="#microcemento" role="tab"
+                    aria-controls="microcemento">Microcemento</a>
+                <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action"
+                    id="efectopiedra-list" data-bs-toggle="list" href="#efectopiedra" role="tab"
+                    aria-controls="efectopiedra">Efecto Piedra</a>
+                <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action"
+                    id="efectohormigon-list" data-bs-toggle="list" href="#efectohormigon" role="tab"
+                    aria-controls="efectohormigon">Efecto
+                    Hormigón</a>
+                <a class="list-group-item border border-secondary bg-dark text-warning list-group-item-action"
+                    id="efectometalizado-list" data-bs-toggle="list" href="#efectometalizado" role="tab"
+                    aria-controls="efectometalizado">Efecto
+                    Metalizado</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="stuccoveneciano" role="tabpanel"
+                    aria-labelledby="stuccoveneciano-list">
+
+                    <div class="col-md-8 col-sm-8" style="margin-left: 100px;">
+                        <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4"
+                            style="max-width: 650px;">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img src="/img/stuccobicolor.jpeg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Stucco Veneciano</h3>
+                                        <p class="card-text mt-3">Efecto decorativo similar a mármol pulido. Consta de
+                                            varios efectos a realizar siempre con éste mismo material, únicamente va
+                                            variando la aplicación y tecnica logrando multiples efectos de terminación.
+                                        </p>
+                                        <a href="/nosotros" class="btn btn-warning text-dark">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {{!-- se cierra caard descrip --}}
+
+                    <div
+                        class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
+                        <div class="col">
+                            <div class="card text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/stuccodis.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terminación semimate</h5>
+                                    <p class="card-text">Éste stucco posee terminación semimate. Se logra con una
+                                        leve pulida de su
+                                        terminación.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/stuccodis2.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stucco lustro</h5>
+                                    <p class="card-text">Éste efecto posee pulido al detalle, su perfecto brillo
+                                        resalta en cualquier
+                                        ambiente a instarlarse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/efectoimperial.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stucco imperial</h5>
+                                    <p class="card-text">Éste efecto simula la piedra de mármol con sus
+                                        caracteristicas grietas y
+                                        colores a tono.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/stuccorojobicolor.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stucco bicolor</h5>
+                                    <p class="card-text">Éste efecto además de tener pulido al detalle, posee una
+                                        combinación de colores
+                                        personalizado.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/stuccobrillo.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stucco metalizado nácar</h5>
+                                    <p class="card-text">Éste efecto posee pulido al detalle y efecto metalizado
+                                        nácar que se le da en
+                                        su última mano de aplicación.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/stuccotecho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stucco en cielo raso</h5>
+                                    <p class="card-text">Éste efecto puede adaptarse a cualquier ambiente incluso al
+                                        cielo raso sin
+                                        ningún tipo de limitación.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> {{!-- se cierra el content 1 --}}
+
+
+                <div class="tab-pane fade" id="microcemento" role="tabpanel" aria-labelledby="microcemento-list">
+
+                    <div class="col-md-8 col-sm-8" style="margin-left: 100px;">
+                        <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4"
+                            style="max-width: 650px;">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img src="/img/microcementosala.jpg" class="img rounded-start"
+                                        style="width: 270px; height: 300px;" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Microcemento</h3>
+                                        <p class="card-text mt-3">Efecto decorativo de alto transito recomendable para
+                                            pisos
+                                            y
+                                            paredes. Permite la renovación de pisos sin necesidad de romper el anterior
+                                            revestimiento.
+                                        </p>
+                                        <a href="/productos" class="btn btn-warning text-dark">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
+                        <div class="col">
+                            <div class="card card1 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/microcementosala.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Microcemento en suelos</h5>
+                                    <p class="card-text">Éste efecto es altamente recomendado para pisos ya que es un
+                                        revestimiento apto para alto transito logrando una durabilidad y usabilidad
+                                        optima
+                                        en el ambiente donde se aplique.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card2 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/microcementoexterior.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Microcemento en exterior</h5>
+                                    <p class="card-text">Éste revestimiento puede ser aplicado en interiores como así
+                                        también en exteriores y en lugares donde quiera obtener un revestimiento que se
+                                        adapte al alto transito y concurrencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card3 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/microcementoparedes.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Microcemento en lugares húmedos</h5>
+                                    <p class="card-text">Éste revestimiento se puede aplicar en lugares húmedos con su
+                                        adecuada protección.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card4 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/micromesa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Microcemento en objetos</h5>
+                                    <p class="card-text">Éste revestimiento puede ser aplicado como decoración de
+                                        objetos,
+                                        accesorios y cualquier medio que se quiera intervenir y tenga el anclaje
+                                        necesario.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>{{!-- se cierra el content 2 --}}
+
+
+                <div class="tab-pane fade" id="efectopiedra" role="tabpanel" aria-labelledby="efectopiedra-list">
+
+
+                    <div class="col-md-8 col-sm-8" style="margin-left: 100px;">
+                        <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4"
+                            style="max-width: 650px;">
+                            <div class="row justify-content-end align-items-center g-0">
+                                <div class="col-md-6 ">
+                                    <img src="/img/efectopiedra.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Efecto piedra</h3>
+                                        <p class="card-text mt-3">Efecto decorativo interior utilizado para simular
+                                            defectos
+                                            en pared similar a una piedra, su aplicación se realiza sobre superficies
+                                            lisas
+                                            o rústicas permitiendo ocultar inperfecciones en la misma.</p>
+                                        <a href="/productos" class="btn btn-warning text-dark">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {{!-- se cierra caard descrip --}}
+
+
+                    <div
+                        class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
+                        <div class="col">
+                            <div class="card card1 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/microcementorelieve.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terminación con stencils</h5>
+                                    <p class="card-text">Efecto creado con stencils que permiten realizar formas y
+                                        relieve en la terminación del revestimiento.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card2 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/efectogrotto1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Efecto piedra brillante</h5>
+                                    <p class="card-text">el efecto piedra brillante se debe a la aplicación de dos
+                                        Revestimientos en conjunto, el efecto piedra con terminación de Stucco
+                                        Veneciano.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card3 h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/piedrastencil.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Efecto piedra en varios tonos</h5>
+                                    <p class="card-text">Es posible realizar la aplicación de varios tonos de color,
+                                        donde deacuerdo al ambiente, la luz juega con los tonos y su fondo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card4 h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/efectomaderamuro.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Efecto piedra metalizada</h5>
+                                    <p class="card-text">Efecto realizado con la combinación de dos revestimientos el
+                                        efecto piedra y la terminación con pintiura metalizada.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>{{!-- se cierra el content 3 --}}
+
+                <div class="tab-pane fade" id="efectohormigon" role="tabpanel" aria-labelledby="efectohormigon-list">
+
+                    <div class="col-md-8 col-sm-8" style="margin-left: 100px;">
+                        <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4"
+                            style="max-width: 650px;">
+                            <div class="row justify-content-center align-items-center g-0">
+                                <div class="col-md-6 ">
+                                    <img src="/img/efectohormigon.jpeg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Efecto Hormigón</h3>
+                                        <p class="card-text mt-3">Efecto decorativo que permite simular los ambientes de
+                                            estilo loft, encofrados y similar.</p>
+                                        <a href="/productos" class="btn btn-warning text-dark">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {{!-- se cierra caard descrip --}}
+
+
+                    <div
+                        class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
+                        <div class="col">
+                            <div class="card card1 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/loft.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terminación semimate</h5>
+                                    <p class="card-text">El efecto Hormigón es un revestimiento que permite disimular
+                                        las inperfecciones de la pared.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card2 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/hormloft.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">hormigon varios tonos</h5>
+                                    <p class="card-text">Éste efecto se logra a partir de la aplicación de varios tonos
+                                        en combinación con la misma gama de colores.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card3 h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/muro.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hormigón Bloque</h5>
+                                    <p class="card-text">Éste efecto simula la piedra tipo bloque de construcción con su
+                                        carasteristicas líneas y cortes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card4 h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/encofrado.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hormigón Encofrado</h5>
+                                    <p class="card-text">Éste efecto simula la terminación de las grandes obras
+                                        utilizando encofrado en las terminaciones.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>{{!-- se cierra el content 4 --}}
+
+
+
+                <div class="tab-pane fade" id="efectometalizado" role="tabpanel"
+                    aria-labelledby="efectometalizado-list">
+
+                    <div class="col-md-8 col-sm-8" style="margin-left: 100px;">
+                        <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4"
+                            style="max-width: 650px;">
+                            <div class="row justify-content-center align-items-center g-0">
+                                <div class="col-md-6 ">
+                                    <img src="/img/metalrev.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Efecto Metalizado</h3>
+                                        <p class="card-text mt-3">Efecto decorativo que permite resaltar los espacios
+                                            con
+                                            estilo similar al metal, puede ser de terminación lisa o tener cargas
+                                            minerales, lo que permite hacer contraste en diferenter tonos con el reflejo
+                                            de la luz.</p>
+                                        <a href="/productos" class="btn btn-warning text-dark">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {{!-- se cierra caard descrip --}}
+
+
+                    <div
+                        class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
+                        <div class="col">
+                            <div class="card card1 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/efectoseda.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terminación semimate</h5>
+                                    <p class="card-text">Éste efecto posee terminación semimate, el reflejo sobre el
+                                        revestimiento genera un juego de luces y tonos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card2 text-warning bg-dark h-100" style="width: 20rem;">
+                                <img src="/img/metalizadocolor.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terminación brillante</h5>
+                                    <p class="card-text">Éste efecto posee pulido, por lo que genera en la superficie y
+                                        en el ambiente un brillo exepcional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card3 h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/metalrev.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terminación rústica brillante</h5>
+                                    <p class="card-text">Ésta terminación se logra mediante la aplicación del
+                                        revestimiento mano a mano logrando superponerse el producto.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card4 h-100 text-warning bg-dark" style="width: 20rem;">
+                                <img src="/img/metalsala.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terminación rústica mate</h5>
+                                    <p class="card-text">Ésta efecto se logra mediante la aplicación del revestimiento
+                                        mano a mano logrando superponerse el producto, sin pulir.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>{{!-- se cierra el content 5 --}}
+
+
+            </div>
         </div>
     </div>
-    <div class="col-8">
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="stuccoveneciano" role="tabpanel"
-                aria-labelledby="stuccoveneciano-list">
 
-                <div class="col-md-8 col-sm-8" style="margin-left: 100px;">
-                    <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4" style="max-width: 650px;">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="/img/stuccobicolor.jpeg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Stucco Veneciano</h3>
-                                    <p class="card-text mt-3">Efecto decorativo similar a mármol pulido. Consta de
-                                        varios efectos a realizar siempre con éste mismo material, únicamente va
-                                        variando la aplicación y tecnica logrando multiples efectos de terminación.</p>
-                                    <a href="/nosotros" class="btn btn-warning text-dark">Comprar ahora!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> {{!-- se cierra caard descrip --}}
-                
-                <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
-                    <div class="col">
-                        <div class="card text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/stuccodis.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Terminación semimate</h5>
-                                <p class="card-text">Éste stucco posee terminación semimate. Se logra con una
-                                    leve pulida de su
-                                    terminación.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/stuccodis2.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Stucco lustro</h5>
-                                <p class="card-text">Éste efecto posee pulido al detalle, su perfecto brillo
-                                    resalta en cualquier
-                                    ambiente a instarlarse.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/efectoimperial.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Stucco imperial</h5>
-                                <p class="card-text">Éste efecto simula la piedra de mármol con sus
-                                    caracteristicas grietas y
-                                    colores a tono.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/stuccorojobicolor.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Stucco bicolor</h5>
-                                <p class="card-text">Éste efecto además de tener pulido al detalle, posee una
-                                    combinación de colores
-                                    personalizado.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/stuccobrillo.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Stucco metalizado nácar</h5>
-                                <p class="card-text">Éste efecto posee pulido al detalle y efecto metalizado
-                                    nácar que se le da en
-                                    su última mano de aplicación.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/stuccotecho.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Stucco en cielo raso</h5>
-                                <p class="card-text">Éste efecto puede adaptarse a cualquier ambiente incluso al
-                                    cielo raso sin
-                                    ningún tipo de limitación.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div> {{!-- se cierra el content 1 --}}
-
-
-            <div class="tab-pane fade" id="microcemento" role="tabpanel" aria-labelledby="microcemento-list">
-
-                <div class="col-md-8 col-sm-8" style="margin-left: 100px;">
-                    <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4" style="max-width: 650px;">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="/img/microcementosala.jpg" class="img rounded-start"
-                                    style="width: 270px; height: 300px;" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Microcemento</h3>
-                                    <p class="card-text mt-3">Efecto decorativo de alto transito recomendable para pisos
-                                        y
-                                        paredes. Permite la renovación de pisos sin necesidad de romper el anterior
-                                        revestimiento.
-                                    </p>
-                                    <a href="/productos" class="btn btn-warning text-dark">Comprar ahora!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
-                    <div class="col">
-                        <div class="card card1 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/microcementosala.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Microcemento en suelos</h5>
-                                <p class="card-text">Éste efecto es altamente recomendado para pisos ya que es un
-                                    revestimiento apto para alto transito logrando una durabilidad y usabilidad optima
-                                    en el ambiente donde se aplique.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card2 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/microcementoexterior.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Microcemento en exterior</h5>
-                                <p class="card-text">Éste revestimiento puede ser aplicado en interiores como así
-                                    también en exteriores y en lugares donde quiera obtener un revestimiento que se
-                                    adapte al alto transito y concurrencia.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card3 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/microcementoparedes.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Microcemento en lugares húmedos</h5>
-                                <p class="card-text">Éste revestimiento se puede aplicar en lugares húmedos con su
-                                    adecuada protección.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card card4 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/micromesa.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Microcemento en objetos</h5>
-                                <p class="card-text">Éste revestimiento puede ser aplicado como decoración de objetos,
-                                    accesorios y cualquier medio que se quiera intervenir y tenga el anclaje necesario.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-
-            </div>{{!-- se cierra el content 2 --}}
-
-
-            <div class="tab-pane fade" id="efectopiedra" role="tabpanel" aria-labelledby="efectopiedra-list">
-
-
-                <div class="col-md-8 col-sm-8"  style="margin-left: 100px;">
-                    <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4" style="max-width: 650px;">
-                        <div class="row justify-content-end align-items-center g-0">
-                            <div class="col-md-6 ">
-                                <img src="/img/efectopiedra.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Efecto piedra</h3>
-                                    <p class="card-text mt-3">Efecto decorativo interior utilizado para simular defectos
-                                        en pared similar a una piedra, su aplicación se realiza sobre superficies lisas
-                                        o rústicas permitiendo ocultar inperfecciones en la misma.</p>
-                                    <a href="/productos" class="btn btn-warning text-dark">Comprar ahora!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> {{!-- se cierra caard descrip --}}
-
-
-                <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
-                    <div class="col">
-                        <div class="card card1 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/microcementorelieve.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Terminación con stencils</h5>
-                                <p class="card-text">Efecto creado con stencils que permiten realizar formas y relieve en la terminación del revestimiento.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card2 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/efectogrotto1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Efecto piedra brillante</h5>
-                                <p class="card-text">el efecto piedra brillante se debe a la aplicación de dos Revestimientos en conjunto, el efecto piedra con terminación de Stucco Veneciano.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card3 h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/piedrastencil.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Efecto piedra en varios tonos</h5>
-                                <p class="card-text">Es posible realizar la aplicación de varios tonos de color, donde deacuerdo al ambiente, la luz juega con los tonos y su fondo.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card card4 h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/efectomaderamuro.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Efecto piedra metalizada</h5>
-                                <p class="card-text">Efecto realizado con la combinación de dos revestimientos el efecto piedra y la terminación con pintiura metalizada.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>{{!-- se cierra el content 3 --}}
-
-            <div class="tab-pane fade" id="efectohormigon" role="tabpanel" aria-labelledby="efectohormigon-list">
-
-                <div class="col-md-8 col-sm-8"  style="margin-left: 100px;">
-                    <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4" style="max-width: 650px;">
-                        <div class="row justify-content-center align-items-center g-0">
-                            <div class="col-md-6 ">
-                                <img src="/img/efectohormigon.jpeg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Efecto Hormigón</h3>
-                                    <p class="card-text mt-3">Efecto decorativo que permite simular los ambientes de
-                                        estilo loft, encofrados y similar.</p>
-                                    <a href="/productos" class="btn btn-warning text-dark">Comprar ahora!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> {{!-- se cierra caard descrip --}}
-
-
-                <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
-                    <div class="col">
-                        <div class="card card1 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/loft.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Terminación semimate</h5>
-                                <p class="card-text">El efecto Hormigón es un revestimiento que permite disimular las inperfecciones de la pared.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card2 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/hormloft.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">hormigon varios tonos</h5>
-                                <p class="card-text">Éste efecto se logra a partir de la aplicación de varios tonos en combinación con la misma gama de colores.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card3 h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/muro.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Hormigón Bloque</h5>
-                                <p class="card-text">Éste efecto simula la piedra tipo bloque de construcción con su carasteristicas líneas y cortes.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card card4 h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/encofrado.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Hormigón Encofrado</h5>
-                                <p class="card-text">Éste efecto simula la terminación de las grandes obras utilizando encofrado en las terminaciones.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-            </div>{{!-- se cierra el content 4 --}}
-
-
-
-            <div class="tab-pane fade" id="efectometalizado" role="tabpanel" aria-labelledby="efectometalizado-list">
-
-                <div class="col-md-8 col-sm-8"  style="margin-left: 100px;">
-                    <div class="card ms-4 mt-2 mb-4 text-warning bg-dark text-center h-100 g-4" style="max-width: 650px;">
-                        <div class="row justify-content-center align-items-center g-0">
-                            <div class="col-md-6 ">
-                                <img src="/img/metalrev.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Efecto Metalizado</h3>
-                                    <p class="card-text mt-3">Efecto decorativo que permite resaltar los espacios con
-                                        estilo similar al metal, puede ser de terminación lisa o tener cargas minerales, lo que permite hacer contraste en diferenter tonos con el reflejo de la luz.</p>
-                                    <a href="/productos" class="btn btn-warning text-dark">Comprar ahora!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> {{!-- se cierra caard descrip --}}
-
-
-                <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-space-evenly align-items-center m-auto mb-5 g-4">
-                    <div class="col">
-                        <div class="card card1 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/efectoseda.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Terminación semimate</h5>
-                                <p class="card-text">Éste efecto posee terminación semimate, el reflejo sobre el revestimiento genera un juego de luces y tonos.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card2 text-warning bg-dark h-100" style="width: 20rem;">
-                            <img src="/img/metalizadocolor.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Terminación brillante</h5>
-                                <p class="card-text">Éste efecto posee pulido, por lo que genera en la superficie y en el ambiente un brillo exepcional.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card3 h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/metalrev.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Terminación rústica brillante</h5>
-                                <p class="card-text">Ésta terminación se logra mediante la aplicación del revestimiento mano a mano logrando superponerse el producto.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card card4 h-100 text-warning bg-dark" style="width: 20rem;">
-                            <img src="/img/metalsala.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Terminación rústica mate</h5>
-                                <p class="card-text">Ésta efecto se logra mediante la aplicación del revestimiento mano a mano logrando superponerse el producto, sin pulir.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-            </div>{{!-- se cierra el content 5 --}}
-
-
-        </div>
+    <div class="cotainer-fuid bg-light text-center py-2 m-0">
+        <p class="descrip h2 m-3">En DecoArt te
+            ayudamos a elegir el revestimiento decorativo <br> que más se adapte a tus necesidades. <br> Hace tu consulta, deja comentarios o pedí un presupuesto.<br>
+        </p>
+        <a href="/contacto" class="inicio-btn btn btn-outline-dark header-btn btn-lg mt-2 mb-3 text-warning">Contacto</a>
     </div>
-</div>
+
+
+</section>
 
 
 <script>

@@ -27,6 +27,12 @@ body {
     height: 200px !important;
 }
 
+.card-img-toppr {
+    width: 70%;
+    height: 200px !important;
+    background-size: cover;
+}
+
 @font-face {
     src: url(../fuentes/akron-shades-nbp-regular.ttf);
     font-family: miestilo;

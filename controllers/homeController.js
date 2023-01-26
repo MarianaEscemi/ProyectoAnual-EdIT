@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 
 const mongoCliente = mongodb.MongoClient;
 
-// Conexión Home
+
 export const home = (req, res) => {
 
     mongoCliente.connect(process.env.MONGOATLAS, (error, db) => {
@@ -26,7 +26,6 @@ export const home = (req, res) => {
     });
 
 };
-
 
 
 export const nosotros = (req, res) => {
@@ -51,7 +50,7 @@ export const nosotros = (req, res) => {
 
 };
 
-//respuesta exito
+
 export const exito = (req, res) => {
 
     mongoCliente.connect(process.env.MONGOATLAS, (error, db) => {
@@ -74,6 +73,7 @@ export const exito = (req, res) => {
 
 };
 
+
 export const especialidad = (req, res) => {
 
     mongoCliente.connect(process.env.MONGOATLAS, (error, db) => {
@@ -95,6 +95,7 @@ export const especialidad = (req, res) => {
     });
 
 };
+
 
 export const disenos = (req, res) => {
 
@@ -141,6 +142,7 @@ export const productos = (req, res) => {
 
 };
 
+
 export const contacto = (req, res) => {
 
     mongoCliente.connect(process.env.MONGOATLAS, (error, db) => {
@@ -165,7 +167,6 @@ export const contacto = (req, res) => {
 
 
 export const contactoenv = (req, res) => {
-    /* const { send } = require("process"); */
 
     const { nombre, email, numero, mensaje } = req.body;
     console.log(`las variables son ${nombre} - ${email} - ${numero} - ${mensaje}`);
@@ -176,34 +177,24 @@ export const contactoenv = (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: "mariana.escemi@gmail.com", 
-                pass: "isec gscw xfgf baua"
+                /* user: "", 
+                pass: , */
             }
         });
-
         let mensaje = await trasporter.sendMail({
             from:  "mariana.escemi@gmail.com",
             to: `${email}`,
             subject: "Gracias por ponerse en contacto con DecoArt",
-            html: `${nombre}, hemos recibido su consulta! a la brevedad nos estaremos comunicando con usted a través de su número telefonico: ${numero} o si así lo prefiere por éste medio ${email}, Saludos cordiales, DecoArt.`
+            html: `${nombre}, hemos recibido su consulta! a la brevedad nos estaremos comunicando con usted a través de su número telefónico: ${numero} o si así lo prefiere por éste medio ${email}, Saludos cordiales, DecoArt.`
         });
         res.render('enviado')
     }
-
 envioMail().catch(console.error)
-        
-    
-
-
-
-
     mongoCliente.connect(process.env.MONGOATLAS, (error, db) => {
         const database = db.db('proyectoanual');
         if (error) {
             console.log(`No estamos conectados a la Database`);
         } else {
-
-
             console.log(`Conexion correcta a la Database`);
             database.collection('decoart').insertOne({ nombre, email, numero, mensaje }, (error, result) => {
                 if (error) {
