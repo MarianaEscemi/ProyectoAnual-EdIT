@@ -9,7 +9,7 @@ const MONGO = process.env.MONGO;
 const MONGOATLAS = process.env.MONGOATLAS;
 
 //3. Conectamos nuestra app a Mongo
-// traemos desde mongo Atlas el useNewUrlParser: true useUnifiedTopology: true para que se conecte a mongo y M atlas
+// traemos desde mongo Atlas el useNewUrlParser: true, useUnifiedTopology: true para que se conecte a mongo y M atlas
 try {
     mongoCliente.connect(MONGOATLAS, {
         useNewUrlParser: true,
@@ -22,3 +22,28 @@ try {
 
 
 
+/* import mongoose from 'mongoose';
+import 'dotenv/config';
+
+
+//2. Pasamos la url local de la ubicacion de la db de mongo y la database
+const MONGO = process.env.MONGO;
+const MONGOATLAS = process.env.MONGOATLAS;
+
+//3. Conectamos nuestra app a Mongo
+// traemos desde mongo Atlas el useNewUrlParser: true, useUnifiedTopology: true para que se conecte a mongo y M atlas
+const conexion = mongoose.connect(MONGOATLAS, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+mongoose.connection.on('connected', () =>{
+    console.log(`Conexión a la Database correcta - MONGOATLAS`);
+});
+
+mongoose.connection.on('error', () =>{
+    console.log(`Conexión a la Database NO encontrada - URL: ${MONGOATLAS}`);
+})
+
+module.exports = conexion;
+ */

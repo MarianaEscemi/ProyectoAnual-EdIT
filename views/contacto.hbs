@@ -28,21 +28,23 @@
 
         <div class="row">
             <div class="col-md-5">
-                <form class="card cardform mt-4 mb-4 border border-3 border-warning">
+                <form method="post" action="/contacto" class="card cardform mt-4 mb-4 border border-3 border-warning" id="contacto">
                     <div class="card-body">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nombre">
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre" value="" required>
                         </div>
                         <div class="form-group mt-2">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" placeholder="Email" name="email" id="email" value="" required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <input type="text" class="form-control" name="numero" placeholder="numero de contacto" id="numero" value="" required>
                         </div>
                         <div class="form-group mt-2 ">
-                            <textarea cols="20" rows="10" placeholder="Mensaje" class="form-control"></textarea>
+                            <textarea cols="20" rows="10" placeholder="Mensaje" class="form-control" name="mensaje" id="mensaje" required></textarea>
                         </div>
-                        {{!-- <div> --}}
-                            
-                        {{!-- </div> --}}
-                    </div><button class="btn btn-outline-dark btn-block btn-lg text-warning m-3">
+                        
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark btn-block btn-lg text-warning m-3">
                                 Enviar
                             </button>
                 </form>

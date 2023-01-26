@@ -5,7 +5,9 @@ import {
     especialidad, 
     disenos,
     productos,
-    contacto 
+    contacto,
+    exito,
+    contactoenv 
 } from '../controllers/homeController.js'
 // from '../controllers/homeControllerAtlas.js'
 // aca podria crear un nuevo controler para atlas 
@@ -16,9 +18,9 @@ export const router = Router();
 router.get('/', home);
 router.get('/nosotros', nosotros);
 router.get('/especialidad', especialidad);
-/* router.get('/revestimientos', revestimientos); */
 router.get('/disenos',disenos);
-/* router.get('/ideas', ideas); */
 router.get('/productos', productos);
 router.get('/contacto', contacto);
-/* router.delete('/delete/:id', deleteTareas); */
+router.get('/exito', exito);
+router.post('/contacto', contactoenv);
+
