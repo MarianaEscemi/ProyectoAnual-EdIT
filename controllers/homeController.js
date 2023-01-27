@@ -19,7 +19,7 @@ export const home = (req, res) => {
                 } else {
                     res.render('home', {
                         result
-                    })
+                    }) 
                 }
             })
         }
