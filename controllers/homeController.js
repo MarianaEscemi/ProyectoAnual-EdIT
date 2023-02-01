@@ -187,7 +187,6 @@ export const contactoenv = (req, res) => {
             subject: "Gracias por ponerse en contacto con DecoArt",
             html: `${nombre}, hemos recibido su consulta! a la brevedad nos estaremos comunicando con usted a través de su número telefónico: ${numero} o si así lo prefiere por éste medio ${email}, Saludos cordiales, DecoArt.`
         });
-        res.render('enviado')
     }
 envioMail().catch(console.error)
     mongoCliente.connect(process.env.MONGOATLAS, (error, db) => {
